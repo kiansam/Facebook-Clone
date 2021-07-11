@@ -6,6 +6,13 @@ export default function Home() {
       <Head>
         <title>Facebook</title>
       </Head>
+      {/* Header*/}
+
+      <main>
+        {/* Sidebar */}
+        {/* Feed */}
+        {/* Widgets */}
+      </main>
     </div>
   );
 }
