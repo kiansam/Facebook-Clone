@@ -20,7 +20,7 @@ function Header() {
   const [session] = useSession();
 
   return (
-    <div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md">
+    <header className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md">
       {/* Left */}
       <div className="flex items-center">
         <Image
@@ -49,11 +49,9 @@ function Header() {
           <HeaderIcon Icon={UserGroupIcon} />
         </div>
       </div>
-
+      
       {/* Right */}
       <div className="flex items-center sm:space-x-2 justify-end">
-        {/* Profile */}
-
         <Image
           onClick={signOut}
           className="rounded-full cursor-pointer"
@@ -63,7 +61,7 @@ function Header() {
           layout="fixed"
           alt="Profile Picture"
         />
-        <p className="whitespace-nowrap font-semibold pr-3">
+        <p className="hidden lg:inline-flex text-sm whitespace-nowrap font-semibold pr-3">
           {session.user.name}
         </p>
 
@@ -72,7 +70,7 @@ function Header() {
         <BellIcon className="icon" />
         <ChevronDownIcon className="icon" />
       </div>
-    </div>
+    </header>
   );
 }
 
