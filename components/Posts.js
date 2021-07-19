@@ -9,7 +9,7 @@ function Posts() {
 
   return (
     <div>
-      {realtimePosts.docs.map((post) => {
+      {realtimePosts?.docs.map((post) => {
         <Post
           key={post.id}
           name={post.data().name}
